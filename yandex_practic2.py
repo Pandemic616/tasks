@@ -1,4 +1,4 @@
-# задачка из яндекс практикума 
+# задачка из яндекс практикума
 def calc_cube_perimeter(side):
     return side * 12
 
