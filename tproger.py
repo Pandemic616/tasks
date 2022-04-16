@@ -6,12 +6,12 @@ def f(a):
     return new_f
 
 
-def f2(s, d):
-    g = []
-    for i in s:
-        if i in d:
-            g.append(i)
-    return g
+def f2(arr1, arr2):
+    array = []
+    for num in arr1:
+        if num in arr2:
+            array.append(num)
+    return array
 
 
-print(f2([1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]))
+
