@@ -4,7 +4,7 @@ def nani(input_arg):
             z = []
             for i in args:
                 if i is None:
-                    z.append(0)
+                    z.append(input_arg)
                 else:
                     z.append(i)
             return func(*z, **kwargs)
