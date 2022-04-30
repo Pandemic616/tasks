@@ -35,4 +35,5 @@ def division(x: int, y: int) -> float:
 
 division(1, 1)
 division(1, 2)
+division(1, 3)
 division(1, 0)
