@@ -15,9 +15,8 @@ def log_error(func: Callable):
         try:
             return func(*args, **kwargs)
         except Exception as err:
-            bag_file = open("Log_ERROR.txt", "a", encoding="UTF-8")
-            bag_file.write(f'произошла ошибка {err}\n')
-            bag_file.close()
+            with open("Log_ERROR.txt", "a", encoding="UTF-8") as file:
+                file.write(f'произошла ошибка {err}\n')
             return (
                 f'произошла ошибка {err}: '
                 f'funcname={func.__name__}, '
